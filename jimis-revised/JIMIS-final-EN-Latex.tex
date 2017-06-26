@@ -1,0 +1,257 @@
+\documentclass{jimis-final-en}
+
+% Packages
+\usepackage{array}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+
+% header
+\title{Article published in JIMIS after reviewing process, then uploaded in HAL (v2) or/an arXiv}
+\author[1]{James JAMY}
+\author[2]{Jane JANY}
+\author[*1,2]{Jimmy JIMIS}
+\affil[1]{University One, Country A} 
+\affil[2]{University Two, Country B} 
+% corresponding author with his/her email
+\corrauthor{jimis@mail.com}
+
+%% Information provided by JIMIS:
+%ISSN
+% DOI 
+\doi{10.18713/JIMIS-ddmmyy-v-a}{}
+% reviewing process: first date = submission, second date = acceptance 
+\review{Month-in-letters Day Year}{Month-in-letters Day Year}
+% Volume and Year of the issue
+\publication{N}{YYYY}
+
+%% Information provided by the Editors:
+% Issue Title 
+\issue{Title of the interdisciplinary issue}
+% List of k Editors
+\editors{First-name-$1$ Family-name-$1$, First-name-$2$ Family-name-$2$, First-name-$k$ Family-name-$k$...}
+
+\begin{document}
+
+\maketitle
+
+\abstract{Sed non est ac erat varius mattis vestibulum tristique massa. Fusce leo elit, volutpat non massa nec,
+semper iaculis enim. Praesent commodo ante nec arcu dapibus dapibus commodo sit amet tellus.
+Donec auctor a ante non semper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc
+cursus dolor vitae massa fringilla semper. Ut nisl purus, porta id pretium tempus, porttitor sit amet
+felis. Maecenas nec leo faucibus, accumsan leo quis, rhoncus ante. Morbi a libero mollis, pellentesque
+tellus vel, consequat justo. Interdum et malesuada fames ac ante ipsum primis in faucibus.}
+
+\keywords{magna condimentum; vel ligula; elementum}
+
+\section{Introduction}
+
+\strut
+\vspace{-4ex}
+
+Sed eu tempor ipsum, vel cursus arcu. Maecenas non dignissim nunc, ac ornare tortor. Aenean
+pretium arcu metus, id pulvinar enim tempus nec. Mauris faucibus mollis sodales. 
+
+Sed porttitor sed metus vitae vestibulum. Quisque a vehicula nunc. Aenean fringilla condimentum
+diam, ac gravida quam. Integer ultrices feugiat enim nec tempus. Vestibulum ornare in magna
+ultrices dapibus. Nulla facilisi. 
+
+\section{Section}
+
+\subsection{Subsection 1}
+Pellentesque dignissim ultrices fringilla. Vivamus eu luctus ante, vel bibendum magna.
+Curabitur elit purus, tincidunt non dui vitae, elementum bibendum neque. Curabitur
+ullamcorper sit amet justo at hendrerit. Fusce ut arcu imperdiet nibh mollis tempus a aliquet
+tellus. Quisque pharetra cursus nisi, vel lobortis ante consectetur et. Vivamus sed congue
+neque. Proin pellentesque risus nec dui consequat rutrum. Vestibulum nunc diam, placerat
+quis auctor vel, faucibus non justo. Etiam dictum purus neque. Phasellus imperdiet mauris
+ligula, eu laoreet nisi elementum ut. Sed sed porta massa. Aenean faucibus risus ultrices
+ornare porta. Quisque faucibus ante a tincidunt vestibulum. Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+
+\subsection{Subsection 2}
+
+\subsubsection{Sub-subsection}
+Suspendisse vel dui nec felis molestie tincidunt. Vestibulum rutrum ligula lacus, ac molestie
+nulla fermentum ornare. Nulla non nunc euismod, porta lacus vestibulum, malesuada massa.
+Curabitur massa eros, rutrum sed lectus sed, volutpat semper metus. Mauris hendrerit aliquam
+commodo.  Vivamus fermentum tempus pellentesque. Maecenas a hendrerit urna. In elit
+ipsum, ultrices non dolor in, pulvinar porttitor lacus. Nunc euismod nibh quis odio
+condimentum, a feugiat massa rutrum. Nulla erat erat, adipiscing vitae lectus id, consectetur
+fermentum elit. Nunc eu est eu neque dapibus semper. Nam commodo urna dapibus, tincidunt
+turpis a, cursus sem. Vivamus venenatis adipiscing mollis. Cras fringilla sodales lobortis.
+Aliquam aliquet felis id est cursus auctor. Duis sodales tellus vulputate lectus egestas
+volutpat.
+
+\section{Tables and Figures}
+
+\subsection{Tables}
+See Table~\ref{tab:example}.
+
+\begin{table}
+  \newcolumntype{+}{>{\global\let\currentrowstyle\relax}}
+  \newcolumntype{^}{>{\currentrowstyle}}
+  \newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+    #1\ignorespaces
+  }
+  \centering
+  \begin{tabular}{+>{\bfseries}l^c^c^c^c}
+    \hline
+    \rowstyle{\bfseries}
+    & Sepal.Length & Sepal.Width & Petal.Length & Petal.Width\\
+    Setosa & 5.006 & 3.428 & 1.462 & 0.246\\
+    Versicolor & 5.936 & 2.77  & 4.26  & 1.326\\
+    Verginica & 6.588 & 2.974 & 5.552 & 2.026\\
+    \hline
+  \end{tabular}
+  \caption{Morbi malesuada diam at magna condimentum.}
+  \label{tab:example}
+\end{table}
+
+\subsection{Figures}
+
+Use subfigures to group similar images into one figure. Make pictures with a good resolution, as possible closed to 300 dpi or use vector graphics as for example provided by the TikZ package. Ensure that all legends are readable and in English. See example in Figure~\ref{fig:example} (taken from \url{http://www.texample.net/tikz/examples/pgfplots/}). The title must be followed by a dot.
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$,
+        ylabel=$y$]
+    \addplot[smooth,mark=*,blue] plot coordinates {
+        (0,2)
+        (2,3)
+        (3,1)
+    };
+    \addlegendentry{Case 1}
+    \addplot[smooth,color=red,mark=x]
+        plot coordinates {
+            (0,0)
+            (1,1)
+            (2,1)
+            (3,2)
+        };
+    \addlegendentry{Case 2}
+    \end{axis}
+    \end{tikzpicture}
+  \caption{Figure by Christian Feuers\"anger, Source: Pgfplots manual.}
+  \label{fig:example}
+\end{figure}
+
+\begin{figure*}[ht] 
+\resizebox{10cm}{7cm}
+  {\includegraphics[width=11cm]{Figures/spider.jpg}}
+  \centering
+  \label{frog}
+.  \caption{A spider, Picture from Didier Josselin.}
+  \end{figure*}
+  
+\section{Definitions, Algorithms and Formulas}
+
+\subsection{Definitions}
+You can define your own environments for formulas with the methods of the \texttt{amsthm} package. Use the theoremstyle \texttt{jimis} for a consistent formatting.
+
+\begin{definition}[alpha]
+Curabitur ullamcorper sit amet justo at hendrerit.
+\end{definition}
+
+Hence we set the following definition:
+
+\begin{definition}[beta]
+Etiam sed nulla viverra, ultrices ligula ac, consectetur libero.
+\end{definition}
+
+If you use a list, you can write a dash or a bullet list:
+\begin{itemize}
+  \item Nunc id justo scelerisque.
+  \item metus id enim iaculis tristique.
+\end{itemize}
+
+\subsection{Formulas}
+
+Example of formula:
+\begin{equation}
+  Y=M.^tM-\beta.\langle M \rangle_l
+\end{equation}
+
+where $\langle M \rangle_l$ is a mean vector of a line from $M$. $\beta$ plays as a regulation factor to regulate the
+rate of nearest neighbours, in fact the number of nearest neighbours is not defined explicitly.
+
+Another example of a formula:
+\begin{equation}
+  K * N_c = Cst \pm 0.001\%
+\end{equation}
+
+\begin{listing}
+  \begin{lstlisting}
+  partition(array, left, right)
+     pivotIndex := choose-pivot(array, left, right)
+     pivotValue := array[pivotIndex]
+     swap array[pivotIndex] and array[right]
+     storeIndex := left
+     for i from left to right - 1
+         if array[i] < pivotValue
+             swap array[i] and array[storeIndex]
+             storeIndex := storeIndex + 1
+     swap array[storeIndex] and array[right]  // Move pivot to its final place
+     return storeIndex
+  \end{lstlisting}
+  \caption{Partition function of quicksort algorithm.}
+  \label{lst:example}
+\end{listing}
+
+\subsection{Algorithms}
+
+For algorithms, use a float environment as shown in Algorithm~\ref{lst:example}. For configurations to specific languages, see the reference manual of the \texttt{listings} package.
+
+\section{Conclusion and references}
+From \citet{sinclair91corpus}, we pick up a general definition... \citet{ounis00flidar} explain that... \citet{wood92artifacts} recommend... Jimis proposes an interesting method in \citet{jimis}... All the references must be cited in the text.
+
+% The \nocite command here is only intended to show more examples of references; please only list works that you really reference in your article
+\nocite{hentschel07acceptance,biodiversa,pubmed,antonymy02perspective,justeson01cooccurence,r-project,perotti2015,petrone:hal-01191886}
+
+\subsection{Discussion}
+Nam id eros massa. Fusce luctus purus a augue ullamcorper, sit amet vehicula mauris
+tristique. Suspendisse eget pulvinar odio, nec bibendum turpis. Nullam quis lectus porttitor,
+ullamcorper nisi et, condimentum leo. Quisque sed orci fermentum, rutrum velit eget, ultricies
+augue. Nunc porttitor consectetur tincidunt. Nulla tincidunt justo enim, vitae dignissim erat
+mattis ut. Nulla.
+
+\subsection{Conclusion}
+Maecenas egestas metus id enim iaculis tristique. Etiam sed nulla viverra, ultrices ligula ac,
+consectetur libero. Nullam vitae massa ac odio pharetra condimentum. Maecenas in
+elementum libero, non gravida quam. Praesent adipiscing consectetur consectetur. Vivamus at
+orci sed augue varius hendrerit. Donec neque metus, dignissim nec erat at, ultricies consequat
+libero. Donec eget eleifend leo. Aliquam at nunc porta, mollis sapien eu, eleifend tortor. Nam
+egestas, metus ac pellentesque feugiat, lectus purus ornare est, vitae cursus felis turpis sit amet
+lacus. Donec consequat massa mi, ac suscipit arcu posuere et. Vivamus et semper risus. Sed ut
+arcu quam.
+
+\bibliographystyle{jimis-en}
+\bibliography{JIMIS-EN}
+
+\appendix\footnotesize
+
+\section{Appendix 1}
+How to write an article of JIMIS in bibtex to cite it in another JIMIS' paper (example: \citet{jimis}) without forgetting anything? See the structure in the latest comments of \textit{jimis.tex}.
+
+\section{Acknowledgment}
+We thank a lot Episciences for its support and the colleagues of JDMDH for the first version of this guideline.
+
+\section{Biography}
+Here, feel free to add short biographies of the authors.
+
+% @incollection{jimis,
+%   author = {Jimis, Jimmy},
+%   title = {Cross-interdisciplinary},
+%   booktitle = {Journal of Interdisciplinary Methodologies and Issues in Science},
+%   publisher = {Episciences},
+%   year = {2015},
+%   editor = {James Jamy and Jane Jany},
+%   volume = {0},
+%   pages = {1-25},
+%   edition = {A first Issue about Interdisciplinary Methodologies and Issues in Science},
+%   doi = {XXXX-000},
+%   note = {\url{http://jimis.episciences.org}}
+%  }
+ 
+\end{document}

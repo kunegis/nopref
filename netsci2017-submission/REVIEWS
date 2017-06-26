@@ -1,0 +1,60 @@
+ear Jérôme, 
+
+Per your request, we are sending the reviews. Please let us know if you have any other questions. 
+
+Best, 
+YY, Ciro, and Tina
+
+
+----------------------- REVIEW 1 ---------------------
+PAPER: 294
+TITLE: The Problem of Action at a Distance in Networks and the Emergence of Preferential Attachment from Triadic Closure
+AUTHORS: Jérôme Kunegis, Jun Sun and Fariba Karimi
+
+Overall evaluation: 1 (Accept as poster)
+
+----------- Overall evaluation -----------
+The proposed model seems to follow/reproduce the well-known connection between heterogeneous degree distribution and triadic closure/transitive linking/nearest-neighbor connection. See for instance:
+
+- "Triadic closure dynamics drives scaling laws in social multiplex networks" by Klimek and Thurner
+
+- "Triadic closure as a basic generating mechanism of communities in complex networks" by Bianconi et al.
+
+- "Emergence of global preferential attachment from local interaction" by Li et al.
+
+- "Clustering and preferential attachment in growing networks" by Newman
+
+- "Network growth by copying" by Krapivsky and Redner
+
+Because it isn't clear what new phenomena can be understood with this model, I recommend rejection of this project for an oral presentation and suggesting a poster presentation instead.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 294
+TITLE: The Problem of Action at a Distance in Networks and the Emergence of Preferential Attachment from Triadic Closure
+AUTHORS: Jérôme Kunegis, Jun Sun and Fariba Karimi
+
+Overall evaluation: 6 (Accept in whatever form the authors requested)
+
+----------- Overall evaluation -----------
+I've always thought that not enough work has been done on the dynamics of link creation at distance > 2. This piece of work aims to give a contribution in that direction. The quite surprising finding is that this "action at distance" seems to emerge from simple rules of local attachment. I would be very interested to hear more about this; I believe a large portion of the netsci audience would think the same.
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 294
+TITLE: The Problem of Action at a Distance in Networks and the Emergence of Preferential Attachment from Triadic Closure
+AUTHORS: Jérôme Kunegis, Jun Sun and Fariba Karimi
+
+Overall evaluation: 1 (Accept as poster)
+
+----------- Overall evaluation -----------
+I see very little novelty in this work. Purely theoretical or computational works these days are of little interest. However, the paper poses an interesting question.
+
+
+-------------------------  METAREVIEW  ------------------------
+PAPER: 294
+TITLE: The Problem of Action at a Distance in Networks and the Emergence of Preferential Attachment from Triadic Closure
+
+RECOMMENDATION: no recommendation
+
+I think this can be presented as a poster. Not with enough appeal for a talk.

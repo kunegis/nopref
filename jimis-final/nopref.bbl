@@ -1,0 +1,291 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Adamic}{Adamic}{1999}]{adamic1999small}
+Adamic L.~A. (1999).
+\newblock The small world {Web}.
+\newblock In {\em International Conference on Theory and Practice of Digital
+  Libraries}, pp.\  443--452.
+\newblock \href {http://dx.doi.org/10.1007/3-540-48155-9\_27}
+  {doi:10.1007/3-540-48155-9\_27}.
+
+
+\bibitem[\protect\citeauthoryear{Baeza-Yates and Ribeiro-Neto}{Baeza-Yates and
+  Ribeiro-Neto}{1999}]{b359}
+Baeza-Yates R., Ribeiro-Neto B. (1999).
+\newblock {\em Modern Information Retrieval}.
+\newblock Boston, USA: Addison-Wesley.
+
+
+\bibitem[\protect\citeauthoryear{Barabási}{Barabási}{2012}]{barabasi2012network}
+Barabási A.-L. (2012).
+\newblock Network science: Luck or reason.
+\newblock {\em Nature\/}~{\em 489\/}(7417), 507--508.
+\newblock \href {http://dx.doi.org/1038/nature11486} {doi:1038/nature11486}.
+
+
+\bibitem[\protect\citeauthoryear{Barabási and Albert}{Barabási and
+  Albert}{1999}]{b439}
+Barabási A.-L., Albert R. (1999).
+\newblock Emergence of scaling in random networks.
+\newblock {\em Science\/}~{\em 286\/}(5439), 509--512.
+\newblock \href {http://dx.doi.org/10.1126/science.286.5439.509}
+  {doi:10.1126/science.286.5439.509}.
+
+
+\bibitem[\protect\citeauthoryear{Boguñá and Pastor-Satorras}{Boguñá and
+  Pastor-Satorras}{2003}]{boguna2003class}
+Boguñá M., Pastor-Satorras R. (2003).
+\newblock Class of correlated random networks with hidden variables.
+\newblock {\em Physical Review E\/}~{\em 68\/}(3), 036112.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.68.036112}
+  {doi:10.1103/PhysRevE.68.036112}.
+
+
+\bibitem[\protect\citeauthoryear{Boguñá, Pastor-Satorras, and
+  Vespignani}{Boguñá \textit{et~al.}}{2004}]{boguna2004cut}
+Boguñá M., Pastor-Satorras R., Vespignani A. (2004).
+\newblock Cut-offs and finite size effects in scale-free networks.
+\newblock {\em European Physical Journal B\/}~{\em 38\/}(2), 205--209.
+\newblock \href {http://dx.doi.org/10.1140/epjb/e2004-00038-8}
+  {doi:10.1140/epjb/e2004-00038-8}.
+
+
+\bibitem[\protect\citeauthoryear{Börner, Sanyal, and Vespignani}{Börner
+  \textit{et~al.}}{2007}]{network-science}
+Börner K., Sanyal S., Vespignani A. (2007).
+\newblock Network science.
+\newblock {\em Annual Review of Information Science and Technology\/}~{\em
+  41\/}(1), 537--607.
+\newblock \href {http://dx.doi.org/10.1002/aris.2007.1440410119}
+  {doi:10.1002/aris.2007.1440410119}.
+
+
+\bibitem[\protect\citeauthoryear{Clauset, Shalizi, and Newman}{Clauset
+  \textit{et~al.}}{2009}]{clauset2009power}
+Clauset A., Shalizi C.~R., Newman M. E.~J. (2009).
+\newblock Power-law distributions in empirical data.
+\newblock {\em SIAM Review\/}~{\em 51\/}(4), 661--703.
+\newblock \href {http://dx.doi.org/10.1137/070710111} {doi:10.1137/070710111}.
+
+
+\bibitem[\protect\citeauthoryear{Einstein}{Einstein}{1916}]{einstein}
+Einstein A. (1916).
+\newblock Die {Grundlagen} der allgemeinen {Relativitätstheorie}.
+\newblock {\em Annalen der Physik\/}~{\em 49}, 769--822.
+\newblock \href {http://dx.doi.org/10.1002/andp.19163540702}
+  {doi:10.1002/andp.19163540702}.
+
+
+\bibitem[\protect\citeauthoryear{Evans and Saramäki}{Evans and
+  Saramäki}{2005}]{evans2005}
+Evans T.~S., Saramäki J.~P. (2005).
+\newblock Scale-free networks from self-organization.
+\newblock {\em Physical Review E\/}~{\em 72\/}(2), 026138.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.72.026138}
+  {doi:10.1103/PhysRevE.72.026138}.
+
+
+\bibitem[\protect\citeauthoryear{Granovetter}{Granovetter}{1985}]{b715}
+Granovetter M. (1985).
+\newblock The strength of weak ties.
+\newblock {\em American Journal of Sociology\/}~{\em 91}, 481--510.
+\newblock \href {http://dx.doi.org/10.1086/225469} {doi:10.1086/225469}.
+
+
+\bibitem[\protect\citeauthoryear{Heider}{Heider}{2013}]{heider2013psychology}
+Heider F. (2013).
+\newblock {\em The Psychology of Interpersonal Relations}.
+\newblock Abingdon, UK: Psychology Press.
+
+
+\bibitem[\protect\citeauthoryear{Hendler, Shadbolt, Hall, Berners-Lee, and
+  Weitzner}{Hendler \textit{et~al.}}{2008}]{web-science}
+Hendler J., Shadbolt N., Hall W., Berners-Lee T., Weitzner D. (2008).
+\newblock Web science: An interdisciplinary approach to understanding the
+  {Web}.
+\newblock {\em Communications of the ACM\/}~{\em 51\/}(7), 60--69.
+\newblock \href {http://dx.doi.org/10.1145/1364782.1364798}
+  {doi:10.1145/1364782.1364798}.
+
+
+\bibitem[\protect\citeauthoryear{Hesse}{Hesse}{1955}]{hesse}
+Hesse M.~B. (1955).
+\newblock Action at a distance in classical physics.
+\newblock {\em Isis\/}~{\em 46\/}(4), 337--353.
+\newblock \href {http://dx.doi.org/10.1086/348429} {doi:10.1086/348429}.
+
+
+\bibitem[\protect\citeauthoryear{Holme and Kim}{Holme and
+  Kim}{2002}]{holme2002growing}
+Holme P., Kim B.~J. (2002).
+\newblock Growing scale-free networks with tunable clustering.
+\newblock {\em Physical Review E\/}~{\em 65\/}(2), 026107.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.65.026107}
+  {doi:10.1103/PhysRevE.65.026107}.
+
+
+\bibitem[\protect\citeauthoryear{Jeong, Mason, Barabási, and Oltvai}{Jeong
+  \textit{et~al.}}{2001}]{jeong2001lethality}
+Jeong H., Mason S.~P., Barabási A.-L., Oltvai Z.~N. (2001).
+\newblock Lethality and centrality in protein networks.
+\newblock {\em Nature\/}~{\em 411\/}(6833), 41--42.
+\newblock \href {http://dx.doi.org/10.1038/35075138} {doi:10.1038/35075138}.
+
+
+\bibitem[\protect\citeauthoryear{Jeong, Tombor, Albert, Oltvai, and
+  Barabási}{Jeong \textit{et~al.}}{2000}]{jeong2000large}
+Jeong H., Tombor B., Albert R., Oltvai Z.~N., Barabási A.-L. (2000).
+\newblock The large-scale organization of metabolic networks.
+\newblock {\em Nature\/}~{\em 407\/}(6804), 651--654.
+\newblock \href {http://dx.doi.org/10.1038/35036627} {doi:10.1038/35036627}.
+
+
+\bibitem[\protect\citeauthoryear{Kitsak and Krioukov}{Kitsak and
+  Krioukov}{2011}]{kitsak2011}
+Kitsak M., Krioukov D. (2011).
+\newblock Hidden variables in bipartite networks.
+\newblock {\em Physical Review E\/}~{\em 84}, 026114.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.84.026114}
+  {doi:10.1103/PhysRevE.84.026114}.
+
+
+\bibitem[\protect\citeauthoryear{Kivelä, Arenas, Barthelemy, Gleeson, Moreno,
+  and Porter}{Kivelä \textit{et~al.}}{2014}]{kivela2014multilayer}
+Kivelä M., Arenas A., Barthelemy M., Gleeson J.~P., Moreno Y., Porter M.~A.
+  (2014).
+\newblock Multilayer networks.
+\newblock {\em Journal of Complex Networks\/}~{\em 2\/}(3), 203--271.
+\newblock \href {http://dx.doi.org/10.1093/comnet/cnu016}
+  {doi:10.1093/comnet/cnu016}.
+
+
+\bibitem[\protect\citeauthoryear{Klimek and Thurner}{Klimek and
+  Thurner}{2013}]{klimek2013triadic}
+Klimek P., Thurner S. (2013).
+\newblock Triadic closure dynamics drives scaling laws in social multiplex
+  networks.
+\newblock {\em New Journal of Physics\/}~{\em 15\/}(6), 063008.
+\newblock \href {http://dx.doi.org/10.1088/1367-2630/15/6/063008}
+  {doi:10.1088/1367-2630/15/6/063008}.
+
+
+\bibitem[\protect\citeauthoryear{Kossinets and Watts}{Kossinets and
+  Watts}{2006}]{kossinets2006empirical}
+Kossinets G., Watts D.~J. (2006).
+\newblock Empirical analysis of an evolving social network.
+\newblock {\em Science\/}~{\em 311\/}(5757), 88--90.
+\newblock \href {http://dx.doi.org/10.1126/science.1116869}
+  {doi:10.1126/science.1116869}.
+
+
+\bibitem[\protect\citeauthoryear{Kunegis}{Kunegis}{2017}]{konect:handbook}
+Kunegis J. (2017).
+\newblock {\em Handbook of Network Analysis [{KONECT} -- the {Koblenz}
+  {Network} {Collection}]}.
+\newblock URL:
+  \url{http://konect.uni-koblenz.de/downloads/konect-handbook.pdf}.
+
+
+\bibitem[\protect\citeauthoryear{Kunegis, Blattner, and Moser}{Kunegis
+  \textit{et~al.}}{2013}]{kunegis:preferential-attachment}
+Kunegis J., Blattner M., Moser C. (2013).
+\newblock Preferential attachment in online networks: Measurement and
+  explanations.
+\newblock In {\em 5th Annual ACM {Web} Science Conference}, pp.\  205--214.
+\newblock \href {http://dx.doi.org/10.1145/2464464.2464514}
+  {doi:10.1145/2464464.2464514}.
+
+
+\bibitem[\protect\citeauthoryear{Kunegis and Preusse}{Kunegis and
+  Preusse}{2012}]{kunegis:power-law}
+Kunegis J., Preusse J. (2012).
+\newblock Fairness on the web: Alternatives to the power law.
+\newblock In {\em 4th Annual ACM {Web} Science Conference}, pp.\  175--184.
+\newblock \href {http://dx.doi.org/10.1145/2380718.2380741}
+  {doi:10.1145/2380718.2380741}.
+
+
+\bibitem[\protect\citeauthoryear{Newman}{Newman}{2001}]{newman2001clustering}
+Newman M. E.~J. (2001).
+\newblock Clustering and preferential attachment in growing networks.
+\newblock {\em Physical Review E\/}~{\em 64\/}(2), 025102.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.64.025102}
+  {doi:10.1103/PhysRevE.64.025102}.
+
+
+\bibitem[\protect\citeauthoryear{Newman}{Newman}{2010}]{newman2010networks}
+Newman M. E.~J. (2010).
+\newblock {\em Networks: An introduction}.
+\newblock Oxford, UK: Oxford University Press.
+
+
+\bibitem[\protect\citeauthoryear{Newton}{Newton}{1687}]{newton}
+Newton I. (1687).
+\newblock {\em Philosophiæ Naturalis Principia Mathematica}.
+\newblock Oxford, UK: Edmund Halley.
+\newblock First edition.
+
+
+\bibitem[\protect\citeauthoryear{Papadopoulos, Kitsak, Serrano, Boguñá, and
+  Krioukov}{Papadopoulos \textit{et~al.}}{2012}]{papadopoulos2012popularity}
+Papadopoulos F., Kitsak M., Serrano M.~A., Boguñá M., Krioukov D. (2012).
+\newblock Popularity versus similarity in growing networks.
+\newblock {\em Nature\/}~{\em 489\/}(7417), 537--540.
+\newblock \href {http://dx.doi.org/10.1038/nature11459}
+  {doi:10.1038/nature11459}.
+
+
+\bibitem[\protect\citeauthoryear{Rapoport}{Rapoport}{1953}]{rapoport1953spread}
+Rapoport A. (1953).
+\newblock Spread of information through a population with socio-structural
+  bias: {II}. {Various} models with partial transitivity.
+\newblock {\em The bulletin of mathematical biophysics\/}~{\em 15\/}(4),
+  535--546.
+\newblock \href {http://dx.doi.org/10.1007/BF02476441}
+  {doi:10.1007/BF02476441}.
+
+
+\bibitem[\protect\citeauthoryear{Salton, Wong, and Yang}{Salton
+  \textit{et~al.}}{1975}]{vector-space-model}
+Salton G., Wong A., Yang C.~S. (1975, November).
+\newblock A vector space model for automatic indexing.
+\newblock {\em Communications of the ACM\/}~{\em 18\/}(11), 613--620.
+\newblock \href {http://dx.doi.org/10.1145/361219.361220}
+  {doi:10.1145/361219.361220}.
+
+
+\bibitem[\protect\citeauthoryear{Shalizi and Thomas}{Shalizi and
+  Thomas}{2011}]{shalizi2011homophily}
+Shalizi C.~R., Thomas A.~C. (2011).
+\newblock Homophily and contagion are generically confounded in observational
+  social network studies.
+\newblock {\em Sociological Methods and Research\/}~{\em 40\/}(2), 211--239.
+\newblock \href {http://dx.doi.org/10.1177/0049124111404820}
+  {doi:10.1177/0049124111404820}.
+
+
+\bibitem[\protect\citeauthoryear{Simmel and Wolff}{Simmel and
+  Wolff}{1950}]{simmel1950sociology}
+Simmel G., Wolff K.~H. (1950).
+\newblock {\em The Sociology of {Georg} {Simmel}}.
+\newblock New York City, USA: Simon and Schuster.
+
+
+\bibitem[\protect\citeauthoryear{Tiropanis, Hall, Crowcroft, Contractor, and
+  Tassiulas}{Tiropanis \textit{et~al.}}{2015}]{tiropanis2015}
+Tiropanis T., Hall W., Crowcroft J., Contractor N., Tassiulas L. (2015).
+\newblock Network science, {Web} science, and internet science.
+\newblock {\em Communications of the ACM\/}~{\em 58\/}(8), 76--82.
+\newblock \href {http://dx.doi.org/10.1145/2699416} {doi:10.1145/2699416}.
+
+
+\bibitem[\protect\citeauthoryear{Vázquez}{Vázquez}{2003}]{vazquez2003growing}
+Vázquez A. (2003).
+\newblock Growing network with local rules: Preferential attachment, clustering
+  hierarchy, and degree correlations.
+\newblock {\em Physical Review E\/}~{\em 67\/}(5), 056104.
+\newblock \href {http://dx.doi.org/10.1103/PhysRevE.67.056104}
+  {doi:10.1103/PhysRevE.67.056104}.
+
+
+\end{thebibliography}

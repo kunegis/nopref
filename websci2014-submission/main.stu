@@ -1,0 +1,47 @@
+
+
+@main:  nopref.pdf; 
+@arxiv: arxiv.tar.gz;
+
+nopref.pdf:  
+	nopref.tex <BIBFILES>
+{
+    set -e
+    rm -f *.aux *.log *.out *.bbl *.blg
+    pdflatex -file-line-error -halt-on-error nopref.tex
+    bibtex nopref
+    pdflatex -file-line-error -halt-on-error nopref.tex
+    pdflatex -file-line-error -halt-on-error nopref.tex
+}
+
+nopref.bbl:  nopref.pdf {}
+
+konect.bib:  ../../projects/konect/extr/konect.bib
+{
+	cp ../../projects/konect/extr/konect.bib konect.bib
+}
+
+kunegis.bib:  ../../bibtex/kunegis.bib
+{
+	cp ../../bibtex/kunegis.bib kunegis.bib
+}
+
+ref.bib:  ../../bibtex/ref.bib
+{
+	cp ../../bibtex/ref.bib ref.bib
+}
+
+FILES:  
+{
+    echo nopref.tex acm_proc_article-sp.cls nopref.bbl >FILES 
+}
+
+BIBFILES: 
+{
+    echo konect.bib kunegis.bib nopref.bib ref.bib >BIBFILES
+}
+
+arxiv.tar.gz: $<FILES>
+{
+	tar cfvvz arxiv.tar.gz $FILES
+}

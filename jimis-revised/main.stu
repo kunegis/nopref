@@ -1,0 +1,81 @@
+#
+# This paper can be built with Stu, by executing 'stu' in this
+# directory.  Get Stu at:
+#
+# https://github.com/kunegis/stu/
+#
+
+% version 2.4
+
+@all:  nopref.pdf reply.pdf nopref.tar.gz; 
+
+nopref.pdf nopref.bbl:  [-n DEP]
+{
+	rm -f *.aux *.log *.out *.bbl *.blg
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode nopref.tex
+	bibtex nopref
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode nopref.tex
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode nopref.tex
+}
+
+>DEP:
+	texdep nopref.tex 
+{
+	./texdep nopref.tex
+	ls -1 *.png # -1 for one-file-per-line output 
+}
+
+texdep = -o ../../stu-utils/;
+cpimg  = -o ../../stu-utils/;
+
+pics/derivation_illust.pdf:  pics/derivation_illust.svg -t cpimg
+{
+	./cpimg pics/derivation_illust.svg pics/derivation_illust.pdf
+}
+
+comparison-legend.pdf:  comparison-legend.svg -t cpimg
+{
+	./cpimg comparison-legend.svg comparison-legend.pdf
+}
+
+pics/$name.pdf; 
+
+$name.pdf:  ../synthetic/plot-nopref/$name.eps -t cpimg
+{
+	./cpimg ../synthetic/plot-nopref/"$name".eps "$name".pdf
+}
+
+nopref.bib;
+
+$name.bib: -o ../../bibtex/$name.bib filterbib
+{
+	# Do nothing if it's not there
+	[ -r ../../bibtex/"$name".bib ] || exit 0
+
+	<../../bibtex/$name.bib >$name.bib ./filterbib
+}
+
+../../bibtex/$name.bib;
+
+konect.bib:  -o konect-extr/konect.bib filterbib
+{
+	# Do nothing if it's not there
+	[ -r konect-extr/konect.bib ] || exit 0
+
+	<konect-extr/konect.bib >konect.bib ./filterbib
+}
+
+reply.pdf:  reply.tex
+{
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode reply.tex
+}
+
+pics/preferential-attachment.pdf:  pics/preferential-attachment.svg -t cpimg
+{
+	./cpimg pics/preferential-attachment.svg pics/preferential-attachment.pdf
+}
+
+nopref.tar.gz:  [DEP] DEP
+{
+	tar cfvvz nopref.tar.gz -T DEP nopref.bbl
+}

@@ -1,0 +1,33 @@
+#
+# This paper can be built with Stu, by executing 'stu' in this
+# directory.  Get Stu at:
+#
+# https://github.com/kunegis/stu/
+#
+
+% version 2.4
+
+nopref.pdf:  [-n DEP]
+{
+	rm -f *.aux *.log *.out *.bbl *.blg
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode nopref.tex
+	bibtex nopref
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode nopref.tex
+	pdflatex -file-line-error -halt-on-error -interaction=nonstopmode nopref.tex
+}
+
+>DEP:
+	texdep nopref.tex 
+{
+	./texdep nopref.tex
+}
+
+texdep = -o ../../;
+cpimg  = -o ../../;
+
+pics/derivation_illust.pdf:
+	pics/derivation_illust.svg cpimg
+{
+	./cpimg pics/derivation_illust.svg pics/derivation_illust.pdf
+}
+

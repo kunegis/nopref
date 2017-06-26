@@ -1,13 +1,38 @@
-This is the "nopref" paper, i.e., the "No preferential attachment" paper. 
+This is the complete source code and Latex code for the paper "The
+Problem of Action at a Distance in Networks and the Emergence of
+Preferential Attachment from Triadic Closure" by J. Kunegis et al. 
 
-Paper versions:
+== Directories == 
 
-websci/ - WebSci abstract (rejected), and arXiv version
-jimis/ - JIMIS journal (final revision) 
-jimis-final/ - Proof for JIMIS
-jimis-submission/ - JIMIS journal (as submitted)
 synthetic/ - Experiments with synthetic datasets
-netsci20117/ - Poster at NetSci'2017
+websci2014-submission/ - 3-page version rejected at WebSci 2014
+jimis-submission/ - version submitted to JIMIS (J. Interdiscip. Methol. and Issues in Sci.)
+jimis-revised/ - revised version for JIMIS
+jimis-final/ - Proof for JIMIS
+netsci2017-submission/ - Abstract submitted to NetSci 2017 (accepted)
+netsci2017-poster/ - Poster presented at NetSci 2017 by J. Kunegis
 
-== Information ==
-* arXiv:  https://arxiv.org/abs/1408.0119
+== Bibtex == 
+
+@article{kunegis:nopref,
+	title = {The Problem of Action at a Distance in Networks and the Emergence of Preferential Attachment from Triadic Closure},  
+	author = {Jérôme Kunegis and Fariba Karimi and Jun Sun},
+	journal = {J. of Interdiscip. Methodol. and Issues in Sci.},
+	year = {2017},
+        volume = {2},
+	issue = {Graphs and Social Systems}, 
+	url = {http://jimis.episciences.org/paper/view/id/3285}, 
+	url_hal = {https://hal.archives-ouvertes.fr/hal-01359796},
+	url_arxiv = {https://arxiv.org/abs/1408.0119},
+	url_src = {https://github.com/yfiua/nopref/jimis/},
+	kunegiscat = {journal}, 
+}
+
+@inproceedings{kunegis:nopref-netsci,
+	title = {The Problem of Action at a Distance in Networks and the Emergence of Preferential Attachment from Triadic Closure},
+	author = {Jérôme Kunegis and Fariba Karimi and Jun Sun},
+	booktitle = {Proc. Int. Sch. and Conf. on Netw. Sci.},
+	year = {2017},
+	url = {http://netsci2017.net/cam/#/event/294}, 
+	kunegiscat = {abstractposterown}, 
+}

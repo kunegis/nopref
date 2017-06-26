@@ -1,0 +1,142 @@
+#
+# These are experiments for the paper "No preferential attachment". 
+#
+
+% version 2.4 
+
+@all:  @degree @simplex;
+
+# Size and average degree of all networks
+N;  
+D;
+
+# The sample networks, i.e., the three extremal networks 
+>NETWORKS:
+	SIMPLEX-MAX
+{
+	m="$(cat SIMPLEX-MAX)"
+	l="$(printf "$m" | wc -c)"
+	m_minus_one="$(( m - 1 ))"
+	m_x="$(( m / 3 ))"
+	m_minus_x="$(( m - m_x - 1 ))"
+	printf "simplex_%0${l}s%0${l}s%0${l}s"'\n' "$m" "0"            "0"            | tr ' ' '0'
+	printf "simplex_%0${l}s%0${l}s%0${l}s"'\n' "1"  "$m_minus_x"   "$m_x"         | tr ' ' '0'
+	printf "simplex_%0${l}s%0${l}s%0${l}s"'\n' "1"  "0"            "$m_minus_one" | tr ' ' '0'
+}
+
+>MATLABPATH:  -p konect-toolbox
+{
+	printf "$PWD/konect-toolbox/m/"
+}
+
+$name-nopref: { mkdir "$name"-nopref/ ; }
+
+konect-toolbox:  { ln -s ../../konect-toolbox ; }
+
+octave = -o konect-analysis/octave;
+
+#
+# Degree distribution (multiple variants) 
+#
+
+@degree:  [dat-nopref/dep.degree] plot-nopref/comparison.eps;
+>dat-nopref/dep.degree:  $[NETWORKS]
+{
+	for network in $NETWORKS ; do
+		echo @degree."$network"
+	done
+}
+
+@degree.$network:  plot-nopref/degree.$network.eps plot-nopref/bidd.$network.eps;
+
+plot-nopref/degree.$network.eps plot-nopref/bidd.$network.eps:   
+	$[-t MATLABPATH] nopref_degree.m -t octave 
+	dat-nopref/out.$network -p plot-nopref N 
+{
+	./octave nopref_degree.m
+}
+
+plot-nopref/comparison.eps:  
+	$[-t MATLABPATH] nopref_comparison.m -t octave 
+	[dat-nopref/dep.comparison] -p plot-nopref N
+	$[NETWORKS]
+{
+	./octave nopref_comparison.m 
+}
+
+>dat-nopref/dep.comparison:
+	NETWORKS
+{
+	for network in $(cat NETWORKS) ; do
+		echo dat-nopref/out."$network"
+	done
+}
+
+#
+# Statistics
+#
+
+dat-nopref/statistics.$network:
+	-t octave nopref_statistics.m $[-t MATLABPATH]
+	dat-nopref/out.$network
+{
+	./octave nopref_statistics.m 
+}
+
+#
+# Simplex
+#
+
+@simplex:  [dat-nopref/dep.simplex]; 
+
+>dat-nopref/dep.simplex:  SIMPLEX-STATISTICS
+{
+	for statistic in $(cat SIMPLEX-STATISTICS) ; do
+		echo plot-nopref/simplex."$statistic".a.eps
+	done
+}
+
+plot-nopref/simplex.$statistic.a.eps:
+	-t octave nopref_simplex.m $[-t MATLABPATH]
+	@simplex-statistics
+	SIMPLEX-MAX
+{
+	./octave nopref_simplex.m
+}
+
+@simplex-statistics:  [dat-nopref/dep.simplex-statistics];
+
+>dat-nopref/dep.simplex-statistics:  SIMPLEX-CASES
+{
+	for abc in $(cat SIMPLEX-CASES) ; do
+		echo dat-nopref/statistics.simplex_"$abc"
+	done
+}
+
+# Total amount in simplex
+SIMPLEX-MAX;
+
+# List of all cases of the simplex.  The naming scheme are three parts
+# XYZ without any intervening punctuation, such that each digit goes
+# from 0 to S, and the sum of the digits is S.  Note:  We exclude the
+# cases where randomness is set to zero, as these are degenerate.  For
+# instance the 100% preferential attachment case would lead to a single
+# node getting all edges.  (In the plot, these are greyed out.)
+>SIMPLEX-CASES:  SIMPLEX-MAX
+{
+	m="$(cat SIMPLEX-MAX)"
+	l="$(printf "$m" | wc -c)"
+	for a in $(seq 1 "$m") ; do
+		for b in $(seq 0 "$(( m - a ))") ; do
+			c="$(( m - a - b ))"
+			printf "%0${l}s%0${l}s%0${l}s"'\n' "$a" "$b" "$c" | tr ' ' '0'
+		done
+	done
+}
+
+dat-nopref/out.simplex_$abc:
+	-t octave nopref_data_simplex.m $[-t MATLABPATH]
+	N D SIMPLEX-MAX
+{
+	./octave nopref_data_simplex.m 
+}

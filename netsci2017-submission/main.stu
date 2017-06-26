@@ -1,0 +1,15 @@
+
+% version 2.4
+
+nopref-abstract.pdf:  
+	degree.triangle.edited.eps
+	nopref-abstract.tex
+{
+	rm -f *.aux *.log *.out *.bbl *.blg
+	pdflatex -file-line-error -halt-on-error nopref-abstract.tex
+	# bibtex nopref-abstract
+	# pdflatex -file-line-error -halt-on-error nopref-abstract.tex
+	# pdflatex -file-line-error -halt-on-error nopref-abstract.tex
+}
+
+degree.triangle.eps = -o ../synthetic/plot-nopref/ ; 

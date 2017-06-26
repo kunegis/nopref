@@ -1,0 +1,6 @@
+#! /bin/sh
+#
+# Filter out DOI and URL strings from a BIB file, via STDIN and STDOUT. 
+#
+
+sed -E -e '/^\s*(doi|url)/d'

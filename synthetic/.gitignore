@@ -1,0 +1,9 @@
+konect-analysis
+konect-toolbox
+dat-nopref
+SIMPLEX-CASES
+MATLABPATH
+dep.*
+out.*
+*.log
+octave-workspace

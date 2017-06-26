@@ -1,0 +1,23 @@
+
+Title:  Emergence of Macro-Scale Phenomena based on Local Interactions
+
+In this paper, we review the concept of locality in generative network
+models, showing how nonlocal phenomena can arise from purely local
+rules.  A graph generator is a model that describes how a graph (or
+network) evolves over time, usually starting with a small seed graph and
+growing over time, but it may also include the removal of edges.  Many
+graph generators exist to explain the evolution of real-world graphs,
+and most of them include nonlocal rules, i.e., rules that assume that
+two nodes can connect randomly, without considering their preexisting
+direct or indirect connections.  An example of a nonlocal rule is
+preferential attachment, by which two nodes connect with a probability
+proportional to their degrees.  While such models as highly successful
+at explaining real-world networks, they are not satisfying as nonlocal
+rules are inherently unrealistic.  Therefore, graph generators with only
+local rules have been sought, and in fact it has been shown that certain
+nonlocal phenomena can be explained as emerging from purely local
+rules.  This papers attempts to give a precise definition of local and
+nonlocal interactions in graph generators, and reviews the literature
+in terms of that definitions.  We find that while local-only models have
+been defined, the precise mechanisms by which nonlocality emerges have
+not yet been characterised.
